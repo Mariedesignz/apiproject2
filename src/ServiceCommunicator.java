@@ -12,6 +12,7 @@ import java.net.URLConnection;
  -fdg
  */
 public class ServiceCommunicator<http> {
+    public Object print;
     private HttpURLConnection conn;
 
     //http://api.tvmaze.com/singlesearch/shows?q=SEARCH
@@ -53,5 +54,6 @@ public class ServiceCommunicator<http> {
         System.out.println(new ServiceCommunicator("https://itunes.apple.com/search?term=" + "bbking" + "\\&limit=1").get());
         System.err.println("==================================");
         System.out.println(new ServiceCommunicator("http://www.google.com").get());
+        System.out.println("what are you looking for?");
     }
 }
