@@ -30,16 +30,16 @@ public  class MyApp {
         return request;
     }
     public static boolean validateRequest(String request ) {
-        if (request.equalsIgnoreCase("Music")) {
+        if (request.equalsIgnoreCase("Music") || request.equalsIgnoreCase("song")) {
             return true;
 
-        } else if (request.equalsIgnoreCase("Zip")) {
+        } else if (request.equalsIgnoreCase("Zip") || request.equalsIgnoreCase("ZipCode")) {
             return true;
 
-        } else if (request.equalsIgnoreCase("Television")) {
+        } else if (request.equalsIgnoreCase("Television") || request.equalsIgnoreCase("show")) {
             return true;
 
-        } else if (request.equalsIgnoreCase("Wiki")) {
+        } else if (request.equalsIgnoreCase("Wiki") || request.equalsIgnoreCase("search")) {
             return true;
 
 
@@ -83,7 +83,7 @@ public  class MyApp {
 
 
 
-            System.out.println("Please enter show you want");
+            //System.out.println("Please enter show you want");
         }
         }
     public static void displayError() {
